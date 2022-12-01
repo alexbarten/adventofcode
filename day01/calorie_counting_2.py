@@ -12,7 +12,7 @@ def compute_calories_per_elf(caloriefile):
 
     with open(caloriefile, 'r') as ce:
         for entry in ce:
-            entry = entry.strip()
+            entry = entry.rstrip()
             if entry != "":
                 one_elf_cals += int(entry)
             else:

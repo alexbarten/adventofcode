@@ -3,20 +3,20 @@ def main():
           compute_calories_per_elf('day01/day01_1.txt'))
 
 
-def compute_calories_per_elf(calories_per_elf):
-    highest_calories = 0
-    current_calories = 0
-    with open(calories_per_elf, 'r') as ce:
+def compute_calories_per_elf(caloriefile):
+    max_cals = 0
+    one_elf_cals = 0
+    with open(caloriefile, 'r') as ce:
         for entry in ce:
-            entry = entry.strip()
+            entry = entry.rstrip()
             if entry != "":
-                current_calories += int(entry)
+                one_elf_cals += int(entry)
             else:
-                if current_calories > highest_calories:
-                    highest_calories = current_calories
-                current_calories = 0
+                if one_elf_cals > max_cals:
+                    max_cals = one_elf_cals
+                one_elf_cals = 0
 
-    return highest_calories
+    return max_cals
 
 
 if __name__ == "__main__":
