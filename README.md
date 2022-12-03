@@ -10,4 +10,4 @@ For each day, I have created a folder with the day number. Each folder contains 
     [name of puzzle]_1 : The first assignment.
     [name of puzzle]_2 : The second assignment.
 
-For most components a test component has been created in the Tests/ folder.
+For a few components a test component has been created in the Tests/ folder.
