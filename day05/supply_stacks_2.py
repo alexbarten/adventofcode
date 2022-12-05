@@ -4,7 +4,7 @@ def main():
 
 def process(stackinput):
     with open(stackinput, 'r') as st:
-        stacks = ['', '', '', '', '', '', '', '', '']
+        stacks = [''] * 9
         for level in st:
             if level.strip() == '':
                 continue
