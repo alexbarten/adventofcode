@@ -1,7 +1,6 @@
 def main():
-    graph = create_graph('day07/bags_0.txt')
-    containers = determine_containers(graph, 'shiny gold bag')
-    print(containers)
+    graph = create_graph('2020/day07/bags_1.txt')
+    print(determine_containers(graph, 'shiny gold bag'))
 
 
 def create_graph(bags):
@@ -18,8 +17,21 @@ def create_graph(bags):
 
 
 def determine_containers(graph, bag):
-    key = {i for i in graph if graph[i] == bag}
-    return key
+    counter = set()
+    bags = [bag]
+    bag = bags.pop()
+    while True:
+        keys = [key for key, value in graph.items() if bag in value]
+        if len(keys) > 0:
+            counter.update(keys)
+            bags.extend(keys)
+            bag = bags.pop()
+        else:
+            if len(bags) > 0:
+                bag = bags.pop()
+            else:
+                break
+    return len(counter)
 
 
 if __name__ == '__main__':
