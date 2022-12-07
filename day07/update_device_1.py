@@ -16,7 +16,7 @@ with open('day07/day07_1.txt', 'r') as td:
         else:
             size, _ = cli.rstrip().split(' ')
             unpeel = trail.copy()
-            for directory in trail:
+            for _ in trail:
                 key = ''.join(unpeel)
                 fs[key] += int(size)
                 unpeel.pop()
