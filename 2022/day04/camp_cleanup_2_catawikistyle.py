@@ -1,6 +1,6 @@
 import re
 
-with open("day04/day04_1.txt", 'r') as rg:
+with open("2022/day04/day04_1.txt", 'r') as rg:
     r = 0
 
     for i in rg:

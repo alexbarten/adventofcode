@@ -1,5 +1,5 @@
 def main():
-    print(convert_input("day02/day02_1.txt"))
+    print(convert_input("2022/day02/day02_1.txt"))
 
 
 def convert_input(rpsfile):

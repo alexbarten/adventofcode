@@ -1,5 +1,5 @@
 def main():
-    print(process('day05/day05_1.txt'))
+    print(process('2022/day05/day05_1.txt'))
 
 
 def process(stackinput):
@@ -13,7 +13,7 @@ def process(stackinput):
                     stacks[i] = stacks[i][::-1].rstrip()
             elif level[0:4] == 'move':
                 nr, orig, dest = [int(i) for i in level.split() if i.isdigit()]
-                stacks[dest-1] += stacks[orig-1][:(-nr - 1):-1]
+                stacks[dest-1] += stacks[orig-1][len(stacks[orig-1])-nr:]
                 stacks[orig-1] = stacks[orig-1][:len(stacks[orig-1])-nr]
             else:
                 stackcounter = 0

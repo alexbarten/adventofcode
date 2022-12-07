@@ -1,5 +1,5 @@
 def main():
-    print(prioritise("day03/day03_1.txt"))
+    print(prioritise("2022/day03/day03_1.txt"))
 
 
 def prioritise(rucksacks):

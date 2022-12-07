@@ -1,4 +1,4 @@
-with open('day07/day07_1.txt', 'r') as td:
+with open('2022/day07/day07_1.txt', 'r') as td:
     fs = dict()
     trail = list()
 

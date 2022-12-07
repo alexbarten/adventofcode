@@ -1,5 +1,5 @@
 def main():
-    print(create('day05/day05_0.txt'))
+    print(create('2022/day05/day05_0.txt'))
 
 
 def create(stacks):

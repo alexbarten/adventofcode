@@ -1,5 +1,5 @@
 def main():
-    print(play_game("day02/day02_1.txt"))
+    print(play_game("2022/day02/day02_1.txt"))
 
 
 def play_game(series):

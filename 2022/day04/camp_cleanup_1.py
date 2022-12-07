@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    print(match("day04/day04_1.txt"))
+    print(match("2022/day04/day04_1.txt"))
 
 
 def match(ranges):
@@ -14,7 +14,7 @@ def match(ranges):
             rg1 = set(range(int(rg1l), int(rg1h)+1))
             rg2 = set(range(int(rg2l), int(rg2h)+1))
 
-            if rg1.intersection(rg2):
+            if rg1.issubset(rg2) or rg2.issubset(rg1):
                 range_in_range += 1
 
         return range_in_range

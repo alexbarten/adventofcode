@@ -1,5 +1,4 @@
 import pytest
-
 from day02.rock_paper_scissors_1_tdd import assess_single, make_proper, score
 
 

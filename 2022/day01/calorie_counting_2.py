@@ -1,5 +1,5 @@
 def main():
-    calorielist = compute_calories_per_elf('day01/day01_1.txt')
+    calorielist = compute_calories_per_elf('2022/day01/day01_1.txt')
     highest_set = get_highest_numbers(calorielist, 3)
 
     print("Highest number of calories carried by three elves: ",

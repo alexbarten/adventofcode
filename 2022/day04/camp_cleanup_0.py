@@ -1,5 +1,5 @@
 def main():
-    print(match("day04/day04_1.txt"))
+    print(match("2022/day04/day04_1.txt"))
 
 
 def match(ranges):

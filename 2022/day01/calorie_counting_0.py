@@ -1,6 +1,6 @@
 def main():
     print("Highest calories per elf: ",
-          compute_calories_per_elf('day01/day01_0.txt'))
+          compute_calories_per_elf('2022/day01/day01_0.txt'))
 
 
 def compute_calories_per_elf(calories_per_elf):
