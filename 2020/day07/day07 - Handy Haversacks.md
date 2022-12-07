@@ -40,6 +40,7 @@ To begin, get your puzzle input.
 Your puzzle answer was 252.
 
 The first half of this puzzle is complete! It provides one gold star: *
+
 --- Part Two ---
 
 It's getting pretty expensive to fly these days - not because of ticket prices, but because of the ridiculous number of bags you need to buy!
