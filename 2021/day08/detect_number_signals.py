@@ -1,5 +1,5 @@
 def main():
-    no_of_digits = count_signals("src/december08/digits.txt")
+    no_of_digits = count_signals("2021/day08/digits.txt")
     digits_to_calculate = [1, 4, 7, 8]
     occurrences = calculate_digits(no_of_digits, digits_to_calculate)
     print("The number of occurrences of 1, 4, 7, and 8 is ", occurrences)

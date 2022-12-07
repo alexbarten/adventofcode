@@ -1,5 +1,5 @@
 def main():
-    codes, output_signals = clean_signals("src/december08/test.txt")
+    codes, output_signals = clean_signals("2021/day08/test.txt")
     sorted_codes = sort_codes(codes)
     numbers = assign_numbers_to_codes(sorted_codes)
     print(output_signals)
