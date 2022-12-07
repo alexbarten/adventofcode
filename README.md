@@ -1,8 +1,8 @@
-# Advent of Code 2022
+# Advent of Code
 
-My solutions to puzzles, that are described on the [Advent of Code](https://adventofcode.com/2022) website.
+My solutions to puzzles, that are described on the [Advent of Code](https://adventofcode.com/) website.
 
-The project has been set up per day. The Advent of Code consists of 25 days (December 1 to 25).
+The project has been set up per day. The Advent of Code consists of 25 days (December 1 to 25), every year.
 
 For each day, I have created a folder with the day number. Each folder contains three code files:
 
