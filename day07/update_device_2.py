@@ -21,11 +21,11 @@ with open('day07/day07_1.txt', 'r') as td:
                 fs[key] += int(size)
                 unpeel.pop()
 
-    largest_yet = fs['/']
-    free = 70000000 - largest_yet
+    close_fit = fs['/']
+    free = 70000000 - close_fit
     needed = 30000000 - free
     for folder in fs:
-        if fs[folder] >= needed and fs[folder] < largest_yet:
-            largest_yet = fs[folder]
+        if fs[folder] >= needed and fs[folder] < close_fit:
+            close_fit = fs[folder]
 
-    print(largest_yet)
+    print(close_fit)
