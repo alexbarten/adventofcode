@@ -1,4 +1,4 @@
-with open('2022/day09/day09_test.txt', 'r') as rb:
+with open('2022/day09/day09_1.txt', 'r') as rb:
     head = [0, 0]
     tail = [0, 0]
     tailmoves = set()
@@ -30,17 +30,17 @@ with open('2022/day09/day09_test.txt', 'r') as rb:
         else:
             move = rb.readline()
             if move:
-                match move[0]:
+                direction, distance = move.rstrip().split(' ')
+                match direction:
                     case 'L':
-                        head[0] -= int(move[2])
+                        head[0] -= int(distance)
                     case 'R':
-                        head[0] += int(move[2])
+                        head[0] += int(distance)
                     case 'U':
-                        head[1] -= int(move[2])
+                        head[1] -= int(distance)
                     case 'D':
-                        head[1] += int(move[2])
+                        head[1] += int(distance)
             else:
                 EOF = True
         tailmoves.add(tuple(tail))
-        print(head, tail, tailmoves)
     print(len(tailmoves))
